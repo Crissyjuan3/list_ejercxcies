@@ -146,3 +146,9 @@ print(fiveletter)
 
 # 1. Utiliza list comprehension para crear una nueva lista que contenga solo las palabras que tienen la letra 'a' de la lista original.
 # 2. Utiliza una función lambda y la función filter() para crear una nueva lista que contenga solo las palabras que tienen más de 5 letras de la lista original.
+
+from functools import reduce
+
+numeros = [1, 2, 3, 4]
+producto = reduce(lambda x, y: x * y, numeros)
+print(producto)  # Imprime: 24
